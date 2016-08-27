@@ -1,15 +1,15 @@
-#This describes script function and variables.
+##This describes script function and variables.
 
-#The script "run_analysis.R" combines the Samsung data
-#Set R working directory storing ”UCI HAR Dataset”.
-#Sourcing “run_analysis.R” retuns an object named "tidy_data_set".
-#FOllowing intermediate objects are removed:
-## step_1: a data set containing whole data from the training and the test sets
-## step_2: the mean and standard deviation for each measurement. 
-## step_3: step_2 with descriptive activity names.
-#The objects step_1 to step_3 are removed and 
+##The script "run_analysis.R" combines the Samsung data
+##Set R working directory storing ”UCI HAR Dataset”.
+##Sourcing “run_analysis.R” retuns an object named "tidy_data_set".
+##Following intermediate objects are removed:
+### step_1: a data set containing whole data from the training and the test sets
+### step_2: the mean and standard deviation for each measurement. 
+### step_3: step_2 with descriptive activity names.
 
-#Variables and description:
+##Variables and description:
+
 "original_variable_name","modified_variable_name","description"
 "tBodyAcc-mean()-X","tBodyAcc_mean_X","Mean value"
 "tBodyAcc-mean()-Y","tBodyAcc_mean_Y","Mean value"

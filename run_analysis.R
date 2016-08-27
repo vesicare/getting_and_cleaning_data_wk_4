@@ -1,9 +1,11 @@
 # Set working directory that stores the Samsung data "UCI HAR Dataset"
-# Sourcing this code creates data frames of step_1 to step_4
+# Sourcing this code returns tidy_data_set object
+# This object describes the average of each variable for each activity and each subject
+##Following intermediate data are removed:
 ## step_1: a data set containing whole data from the training and the test sets 
 ## step_2: the mean and standard deviation for each measurement. 
 ## step_3: step_2 with descriptive activity names.
-## step_4: the average of each variable for each activity and each subject
+
 
 makeTable <- function(){
 library(dplyr)
