@@ -160,9 +160,10 @@ for (i in 1:6){
 step_2$activity_label[step_2$activity_label == activity[[i]][1]]<-
     activity[[i]][2]}
 #### as factor
-step_2$activity_label<- factor(step_2$activity_label, levels = c(
+step_2$activity_label <- factor(step_2$activity_label, levels = c(
     activity[[1]][2],activity[[2]][2],activity[[3]][2],activity[[4]][2],
     activity[[5]][2],activity[[6]][2]))
+step_2$subject <- factor(step_2$subject, levels = as.character(1:30))
 step_2
 }
 step_3 <- decriptive_activity_label()
@@ -185,3 +186,5 @@ tidy_data_set <- tidy_data()
 rm(step_1, step_2, step_3, decriptive_activity_label, extract_mean_std,
    makeTable, tidy_data)
 setwd("../")
+
+tidy_data_set<- tidy_data_set %>% arrange(subject, activity_label)

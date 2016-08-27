@@ -1,6 +1,7 @@
 ##This describes script function and variables.
 
-##The script "run_analysis.R" combines the Samsung data
+##The script "run_analysis.R" combines the Samsung data.
+###Variables subjects and activity_lable are factor
 ##Set R working directory storing ”UCI HAR Dataset”.
 ##Sourcing “run_analysis.R” retuns an object named "tidy_data_set".
 ##Following intermediate objects are removed:
